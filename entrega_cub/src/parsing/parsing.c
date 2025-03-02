@@ -6,7 +6,7 @@
 /*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 00:49:06 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/02/28 16:51:56 by tsantana         ###   ########.fr       */
+/*   Updated: 2025/03/02 14:23:37 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,3 @@ void	parsing(int argc, char **argv, t_cub *game)
 	check_map_content(&valid);
 	surrounded_by_walls(game->data);
 }
-
-

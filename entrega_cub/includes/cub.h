@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   cub.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 00:31:48 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/02/20 00:31:48 by leobarbo         ###   ########.fr       */
+/*   Updated: 2025/03/02 14:11:58 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef CUB_H
 # define CUB_H

@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+         #
+#    By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/20 00:44:26 by leobarbo          #+#    #+#              #
-#    Updated: 2025/02/20 00:44:26 by leobarbo         ###   ########.fr        #
+#    Updated: 2025/03/02 14:40:06 by tsantana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME        := cub3D
-CFLAGS      := -Wextra -Wall -Werror -g3 -O3
+CFLAGS      := -Wextra -Wall -Werror -g3 -O3 -fPIC
 MAKEFLAGS   += --silent
 
 LIBMLX      := ./MLX42
@@ -37,6 +37,7 @@ CFILES      :=  main.c \
                 parsing/map_utils.c \
                 parsing/check_wall.c \
                 parsing/tabs.c \
+				parsing/parsing_utils.c \
                 render/hooks.c \
                 render/movements.c \
                 render/images.c \

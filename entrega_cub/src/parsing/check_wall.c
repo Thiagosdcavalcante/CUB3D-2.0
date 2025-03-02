@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_wall.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 00:48:40 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/02/20 00:48:40 by leobarbo         ###   ########.fr       */
+/*   Updated: 2025/03/02 14:22:46 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	count_len(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i] && str[i] != '2')
 	i++;
@@ -117,4 +117,3 @@ void	surrounded_by_walls(t_data *data)
 		y++;
 	}
 }
-

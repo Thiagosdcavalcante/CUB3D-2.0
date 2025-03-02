@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parsing_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/20 00:45:59 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/03/02 14:18:18 by tsantana         ###   ########.fr       */
+/*   Created: 2025/03/02 14:21:46 by tsantana          #+#    #+#             */
+/*   Updated: 2025/03/02 14:22:56 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/cub.h"
+#include "../../includes/cub.h"
 
-int	main(int argc, char **argv)
+uint32_t	convert_rgb(int r, int g, int b)
 {
-	t_cub	game;
-
-	init(&game);
-	parsing(argc, argv, &game);
-	printf("PARSSING OK\n");
-	init_game(&game);
-	return (EXIT_SUCCESS);
+	return (r << 24 | g << 16 | b << 8 | 255);
 }

@@ -6,7 +6,7 @@
 /*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 00:48:33 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/02/28 16:10:22 by tsantana         ###   ########.fr       */
+/*   Updated: 2025/03/02 14:22:11 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,10 +67,10 @@ void	check_rgb(uint32_t *color, char *rgb_color, char *original, char c)
 	ft_free_matrix(rgb);
 }
 
-static int valid_rgb_content(char *rgb_color)
+static int	valid_rgb_content(char *rgb_color)
 {
 	int	i;
-	int valid;
+	int	valid;
 
 	i = 0;
 	valid = 0;
@@ -111,9 +111,3 @@ void	split_rgb(char ***rgb, char *rgb_color, char *original, char c)
 	if (i != 3)
 		handle_error_rgb(original, *rgb);
 }
-
-uint32_t	convert_rgb(int r, int g, int b)
-{
-	return (r << 24 | g << 16 | b << 8 | 255);
-}
-

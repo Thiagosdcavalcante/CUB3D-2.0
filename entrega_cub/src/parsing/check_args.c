@@ -6,7 +6,7 @@
 /*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 00:48:28 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/02/28 16:55:48 by tsantana         ###   ########.fr       */
+/*   Updated: 2025/03/02 15:25:59 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	check_arguments(int argc)
 	if (argc != 2)
 	{
 		printf(RED WARNING_ARGS RST);
-		free(game);
+		free_memory(game);
 		exit(EXIT_FAILURE);
 	}
 	else
@@ -32,7 +32,7 @@ void	check_extension(char *map_file)
 	char	*extension;
 	int		i;
 	int		len;
-	
+
 	i = 0;
 	extension = ".cub";
 	len = ft_strlen(map_file);

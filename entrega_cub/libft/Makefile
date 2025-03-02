@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+         #
+#    By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/20 00:35:32 by leobarbo          #+#    #+#              #
-#    Updated: 2025/02/20 00:35:32 by leobarbo         ###   ########.fr        #
+#    Updated: 2025/03/02 14:35:41 by tsantana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ OBJ_DIR	:= obj
 
 MAKEFLAGS	+= --silent
 CC		:= cc
-FLAGS	:= -Wall -Werror -Wextra -g3
+FLAGS	:= -Wall -Werror -Wextra -g3 -fPIC
 HEADER	:= -I ./src
 
 CFILES	:= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \

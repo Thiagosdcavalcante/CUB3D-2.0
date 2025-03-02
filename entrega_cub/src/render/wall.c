@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   wall.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: tsantana <tsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 00:47:42 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/02/20 00:47:42 by leobarbo         ###   ########.fr       */
+/*   Updated: 2025/03/02 14:18:58 by tsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,16 @@ mlx_texture_t	*set_wall(t_cub *game, t_dda *ray)
 	if (ray->hit_side == 1)
 	{
 		if (ray->step.y < 0)
-		return (game->north);
+			return (game->north);
 		else
-		return (game->south);
+			return (game->south);
 	}
 	else
 	{
 		if (ray->step.x < 0)
-		return (game->west);
+			return (game->west);
 		else
-		return (game->east);
+			return (game->east);
 	}
 	return (NULL);
 }
